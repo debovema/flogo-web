@@ -47,6 +47,9 @@ export class ImportErrorFormatterService {
       case 'improper-import':
         messageHeader = this._translate.instant('IMPORT-ERROR:IMPROPER_IMPORT');
         break;
+      case 'supported-handler-ref':
+        messageHeader = this._translate.instant('IMPORT-ERROR:HANDLER_NOT_INSTALLED');
+        break;
       default:
         messageHeader = this._translate.instant('APP-LIST:BROKEN_RULE_UNKNOWN');
         break;
@@ -124,8 +127,18 @@ export class ImportErrorFormatterService {
           ref: detail.params.ref,
         });
         break;
+      case 'supported-handler-ref':
+        errorMessage = this._translate.instant(
+          'IMPORT-ERROR:HANDLER_NOT_INSTALLED_CONTENT',
+          {
+            ref: detail.params.ref,
+          }
+        );
+        break;
       default:
-        errorMessage = this._translate.instant('APP-LIST:BROKEN_RULE_UNKNOWN');
+        errorMessage =
+          detail.message ||
+          this._translate.instant('APP-LIST:BROKEN_RULE_UNKNOWN_CONTENT');
         break;
     }
     return errorMessage;

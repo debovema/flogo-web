@@ -20,7 +20,8 @@
   "APP-LIST:BROKEN_RULE_WRONG_INPUT_JSON_FILE": "Wrong input JSON file",
   "APP-LIST:VALIDATION_ERROR": "Encountered validation errors",
   "APP-LIST:INTERNAL_ERROR": "Internal error",
-  "APP-LIST:BROKEN_RULE_UNKNOWN": "Unknown error",
+  "APP-LIST:BROKEN_RULE_UNKNOWN": "Validation error",
+  "APP-LIST:BROKEN_RULE_UNKNOWN_CONTENT": "An error occurred while validating the imported application.",
   "APP": {
     "MISSING_TRIGGER": {
       "TITLE": "Some flows don’t have triggers yet.",
@@ -55,6 +56,8 @@
   "IMPORT-ERROR:UNSUPPORTED_RESOURCE_TYPE": "Unsupported resource type",
   "IMPORT-ERROR:UNSUPPORTED_RESOURCE_TYPE_DETAIL": "Unsupported resource type \"{{type}}\"",
   "IMPORT-ERROR:IMPROPER_IMPORT": "Import syntax",
+  "IMPORT-ERROR:HANDLER_NOT_INSTALLED": "Handler missing",
+  "IMPORT-ERROR:HANDLER_NOT_INSTALLED_CONTENT": "{{ref}} - You will need to install this handler before you can use it in an app.",
   "IMPORT-ERROR:IMPROPER_IMPORT_CONTENT": "{{ref}} - Invalid import",
   "APP-DETAILS:NO-RESOURCES-FOUND": "No actions found",
   "APP-DETAILS:DELETE-APP": "Delete App",
